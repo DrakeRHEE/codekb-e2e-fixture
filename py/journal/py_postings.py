@@ -1,4 +1,4 @@
-"""Ibis postings: journal entries validated and given a memo before posting."""
+"""Ibis postings: journal entries validated and given a memo before posting. (revision 1)"""
 
 
 def validate_ibis_entry(entry):

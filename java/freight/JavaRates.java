@@ -1,4 +1,4 @@
-/** Okapi rates: freight rate quotes per kilogram. */
+/** Okapi rates: freight rate quotes per kilogram. (revision 1) */
 public class JavaRates {
 
     /** Base okapi freight rate: a flat fee plus a per-kilogram charge. */

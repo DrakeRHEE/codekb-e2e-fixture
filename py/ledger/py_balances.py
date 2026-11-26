@@ -1,4 +1,4 @@
-"""Heron accounts: balances reconciled and audited against one normalizer."""
+"""Heron accounts: balances reconciled and audited against one normalizer. (revision 1)"""
 
 
 def normalize_heron_amount(amount):

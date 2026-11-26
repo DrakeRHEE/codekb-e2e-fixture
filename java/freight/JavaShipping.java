@@ -1,4 +1,4 @@
-/** Granite freight: manifests of granite crates and their shipped weight. */
+/** Granite freight: manifests of granite crates and their shipped weight. (revision 1) */
 /** A manifest of granite crates for one freight carrier. */
 public class JavaShipping {
 

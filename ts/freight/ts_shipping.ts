@@ -1,4 +1,4 @@
-// Slate freight: manifests of slate crates and their shipped weight.
+// Slate freight: manifests of slate crates and their shipped weight. (revision 1)
 
 // A manifest of slate crates for one freight carrier.
 export class SlateFreightManifest {

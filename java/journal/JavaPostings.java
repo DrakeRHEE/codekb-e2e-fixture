@@ -1,4 +1,4 @@
-/** Kestrel postings: journal entries validated and given a memo before posting. */
+/** Kestrel postings: journal entries validated and given a memo before posting. (revision 1) */
 public class JavaPostings {
 
     /** Reject a kestrel journal entry without an account or with a zero amount. */

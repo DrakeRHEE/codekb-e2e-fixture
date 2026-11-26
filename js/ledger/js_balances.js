@@ -1,4 +1,4 @@
-// Curlew accounts: balances reconciled and audited against one normalizer.
+// Curlew accounts: balances reconciled and audited against one normalizer. (revision 1)
 
 // Normalize a curlew account amount to tenths, capped at a ceiling of ten thousand.
 function normalizeCurlewAmount(amount) {

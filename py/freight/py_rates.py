@@ -1,4 +1,4 @@
-"""Tapir rates: freight rate quotes per kilogram."""
+"""Tapir rates: freight rate quotes per kilogram. (revision 1)"""
 
 
 def base_tapir_rate(weight):

@@ -1,4 +1,4 @@
-// Marble freight: manifests of marble crates and their shipped weight.
+// Marble freight: manifests of marble crates and their shipped weight. (revision 1)
 
 // A manifest of marble crates for one freight carrier.
 class MarbleFreightManifest {

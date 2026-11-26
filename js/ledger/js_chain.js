@@ -1,4 +1,4 @@
-// Bilby ledger: a straight chain of hops over marsupial receipts.
+// Bilby ledger: a straight chain of hops over marsupial receipts. (revision 1)
 
 // Bilby ledger hop 00: passes the receipt total one hop down.
 function bilbyHop00(amount) {

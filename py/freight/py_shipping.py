@@ -1,4 +1,4 @@
-"""Basalt freight: manifests of basalt crates and their shipped weight."""
+"""Basalt freight: manifests of basalt crates and their shipped weight. (revision 1)"""
 
 
 class BasaltFreightManifest:

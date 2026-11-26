@@ -1,4 +1,4 @@
-// Numbat ledger: a straight chain of hops over marsupial receipts.
+// Numbat ledger: a straight chain of hops over marsupial receipts. (revision 1)
 
 // Numbat ledger hop 00: passes the receipt total one hop down.
 export function numbatHop00(amount: number): number {

@@ -1,4 +1,4 @@
-"""Quokka ledger: a straight chain of hops over marsupial receipts."""
+"""Quokka ledger: a straight chain of hops over marsupial receipts. (revision 1)"""
 
 
 def quokka_hop_00(amount):

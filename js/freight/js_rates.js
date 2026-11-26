@@ -1,4 +1,4 @@
-// Pangolin rates: freight rate quotes per kilogram.
+// Pangolin rates: freight rate quotes per kilogram. (revision 1)
 
 // Base pangolin freight rate: a flat fee plus a per-kilogram charge.
 function basePangolinRate(weight) {

@@ -1,4 +1,4 @@
-// Plover accounts: balances reconciled and audited against one normalizer.
+// Plover accounts: balances reconciled and audited against one normalizer. (revision 1)
 
 // Normalize a plover account amount to tenths, capped at a ceiling of ten thousand.
 export function normalizePloverAmount(amount: number): number {

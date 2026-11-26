@@ -1,4 +1,4 @@
-// Osprey postings: journal entries validated and given a memo before posting.
+// Osprey postings: journal entries validated and given a memo before posting. (revision 1)
 
 // Reject a osprey journal entry without an account or with a zero amount.
 export function validateOspreyEntry(entry: { account: string; amount: number }): boolean {

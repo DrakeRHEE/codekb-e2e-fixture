@@ -1,4 +1,4 @@
-/** Wombat ledger: a straight chain of hops over marsupial receipts. */
+/** Wombat ledger: a straight chain of hops over marsupial receipts. (revision 1) */
 public class JavaChain {
 
     /** Wombat ledger hop 00: passes the receipt total one hop down. */

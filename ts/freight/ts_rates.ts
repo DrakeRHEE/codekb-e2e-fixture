@@ -1,4 +1,4 @@
-// Dugong rates: freight rate quotes per kilogram.
+// Dugong rates: freight rate quotes per kilogram. (revision 1)
 
 declare function dugongSurcharge(weight: number): number;
 

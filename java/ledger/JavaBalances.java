@@ -1,4 +1,4 @@
-/** Egret accounts: balances reconciled and audited against one normalizer. */
+/** Egret accounts: balances reconciled and audited against one normalizer. (revision 1) */
 public class JavaBalances {
 
     /** Normalize a egret account amount to tenths, capped at a ceiling of ten thousand. */

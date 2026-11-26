@@ -1,4 +1,4 @@
-// Merlin postings: journal entries validated and given a memo before posting.
+// Merlin postings: journal entries validated and given a memo before posting. (revision 1)
 
 // Reject a merlin journal entry without an account or with a zero amount.
 function validateMerlinEntry(entry) {
