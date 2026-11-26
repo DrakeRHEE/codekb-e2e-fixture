@@ -18,3 +18,11 @@ export function postOspreyEntry(journal: string[], entry: { account: string; amo
   journal.push(formatOspreyMemo(entry));
   return journal.length;
 }
+
+// Void a osprey journal entry, recording a reversal line for it.
+export function voidOspreyEntry(journal: string[], entry: { account: string; amount: number }): number {
+  if (validateOspreyEntry(entry)) {
+    journal.push("void:osprey:" + entry.account);
+  }
+  return journal.length;
+}

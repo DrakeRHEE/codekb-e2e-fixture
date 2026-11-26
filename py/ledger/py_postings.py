@@ -17,3 +17,10 @@ def post_ibis_entry(journal, entry):
         raise ValueError("invalid ibis entry")
     journal.append(format_ibis_memo(entry))
     return len(journal)
+
+
+def void_ibis_entry(journal, entry):
+    """Void a ibis journal entry, recording a reversal line for it."""
+    if validate_ibis_entry(entry):
+        journal.append("void:ibis:" + str(entry["account"]))
+    return len(journal)

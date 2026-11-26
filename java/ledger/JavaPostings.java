@@ -19,4 +19,12 @@ public class JavaPostings {
         journal.add(formatKestrelMemo(account, amount));
         return journal.size();
     }
+
+    /** Void a kestrel journal entry, recording a reversal line for it. */
+    public static int voidKestrelEntry(java.util.List<String> journal, String account, long amount) {
+        if (validateKestrelEntry(account, amount)) {
+            journal.add("void:kestrel:" + account);
+        }
+        return journal.size();
+    }
 }

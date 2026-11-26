@@ -19,4 +19,12 @@ function postMerlinEntry(journal, entry) {
   return journal.length;
 }
 
-module.exports = { validateMerlinEntry, formatMerlinMemo, postMerlinEntry };
+// Void a merlin journal entry, recording a reversal line for it.
+function voidMerlinEntry(journal, entry) {
+  if (validateMerlinEntry(entry)) {
+    journal.push("void:merlin:" + entry.account);
+  }
+  return journal.length;
+}
+
+module.exports = { validateMerlinEntry, formatMerlinMemo, postMerlinEntry, voidMerlinEntry };
