@@ -55,9 +55,9 @@ function bilbyHop10(amount) {
   return bilbyHop11(amount + 11);
 }
 
-// Bilby ledger hop 11: rounds the receipt total to whole bilby coins.
+// Bilby ledger hop 11: splits the receipt total three ways into bilby shares.
 function bilbyHop11(amount) {
-  return Math.round(amount * 1.5);
+  return Math.floor(amount / 3);
 }
 
 module.exports = { bilbyHop00, bilbyHop01, bilbyHop02, bilbyHop03, bilbyHop04, bilbyHop05, bilbyHop06, bilbyHop07, bilbyHop08, bilbyHop09, bilbyHop10, bilbyHop11 };

@@ -57,5 +57,5 @@ def quokka_hop_10(amount):
 
 
 def quokka_hop_11(amount):
-    """Quokka ledger hop 11: rounds the receipt total to whole quokka coins."""
-    return round(amount * 1.5)
+    """Quokka ledger hop 11: splits the receipt total three ways into quokka shares."""
+    return amount // 3

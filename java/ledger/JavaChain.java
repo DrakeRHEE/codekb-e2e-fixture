@@ -56,8 +56,8 @@ public class JavaChain {
         return wombatHop11(amount + 11);
     }
 
-    /** Wombat ledger hop 11: rounds the receipt total to whole wombat coins. */
+    /** Wombat ledger hop 11: splits the receipt total three ways into wombat shares. */
     public static int wombatHop11(int amount) {
-        return (int) Math.round(amount * 1.5);
+        return Math.floor(amount / 3);
     }
 }

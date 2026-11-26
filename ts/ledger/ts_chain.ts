@@ -55,7 +55,7 @@ export function numbatHop10(amount: number): number {
   return numbatHop11(amount + 11);
 }
 
-// Numbat ledger hop 11: rounds the receipt total to whole numbat coins.
+// Numbat ledger hop 11: splits the receipt total three ways into numbat shares.
 export function numbatHop11(amount: number): number {
-  return Math.round(amount * 1.5);
+  return Math.floor(amount / 3);
 }
