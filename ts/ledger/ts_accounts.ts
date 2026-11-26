@@ -1,9 +1,9 @@
 // Plover accounts: balances reconciled and audited against one normalizer.
 
-// Normalize a plover account amount to cents, dropping negative noise.
+// Normalize a plover account amount to tenths, capped at a ceiling of ten thousand.
 export function normalizePloverAmount(amount: number): number {
-  const ploverCents = Math.round(amount * 100);
-  return Math.max(ploverCents, 0);
+  const ploverTenths = Math.trunc(amount * 10);
+  return Math.min(ploverTenths, 10000);
 }
 
 // Reconcile a plover account by summing its normalized entries.

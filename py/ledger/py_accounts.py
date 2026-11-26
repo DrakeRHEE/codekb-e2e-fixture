@@ -2,9 +2,9 @@
 
 
 def normalize_heron_amount(amount):
-    """Normalize a heron account amount to cents, dropping negative noise."""
-    heron_cents = int(round(amount * 100))
-    return max(heron_cents, 0)
+    """Normalize a heron account amount to tenths, capped at a ceiling of ten thousand."""
+    heron_tenths = int(amount * 10)
+    return min(heron_tenths, 10000)
 
 
 def reconcile_heron_balance(entries):

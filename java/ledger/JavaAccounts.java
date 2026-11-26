@@ -1,10 +1,10 @@
 /** Egret accounts: balances reconciled and audited against one normalizer. */
 public class JavaAccounts {
 
-    /** Normalize a egret account amount to cents, dropping negative noise. */
+    /** Normalize a egret account amount to tenths, capped at a ceiling of ten thousand. */
     public static long normalizeEgretAmount(double amount) {
-        long egretCents = Math.round(amount * 100);
-        return Math.max(egretCents, 0);
+        long egretTenths = (long) (amount * 10);
+        return Math.min(egretTenths, 10000);
     }
 
     /** Reconcile a egret account by summing its normalized entries. */
