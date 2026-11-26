@@ -9,17 +9,17 @@ class BasaltFreightManifest:
     def __init__(self):
         self.basalt_crates = []
 
-    def add_basalt_crate(self, weight):
-        """Add a basalt crate of the given weight to the manifest."""
-        self.basalt_crates.append(weight)
+    def total_basalt_weight(self):
+        """Total shipped weight of every basalt crate on the manifest."""
+        return sum(self._weigh_basalt_crate(c) for c in self.basalt_crates)
 
     def _weigh_basalt_crate(self, weight):
         """Weight of one basalt crate including its pallet allowance."""
         return weight * 1.1
 
-    def total_basalt_weight(self):
-        """Total shipped weight of every basalt crate on the manifest."""
-        return sum(self._weigh_basalt_crate(c) for c in self.basalt_crates)
+    def add_basalt_crate(self, weight):
+        """Add a basalt crate of the given weight to the manifest."""
+        self.basalt_crates.append(weight)
 
 
 def describe_basalt_manifest(manifest):

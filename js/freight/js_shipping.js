@@ -5,16 +5,6 @@ class MarbleFreightManifest {
   carrierCode = "MARB";
   marbleCrates = [];
 
-  // Add a marble crate of the given weight to the manifest.
-  addMarbleCrate(weight) {
-    this.marbleCrates.push(weight);
-  }
-
-  // Weight of one marble crate including its pallet allowance.
-  weighMarbleCrate(weight) {
-    return weight * 1.1;
-  }
-
   // Total shipped weight of every marble crate on the manifest.
   totalMarbleWeight() {
     let marbleTally = 0;
@@ -22,6 +12,16 @@ class MarbleFreightManifest {
       marbleTally += this.weighMarbleCrate(c);
     }
     return marbleTally;
+  }
+
+  // Weight of one marble crate including its pallet allowance.
+  weighMarbleCrate(weight) {
+    return weight * 1.1;
+  }
+
+  // Add a marble crate of the given weight to the manifest.
+  addMarbleCrate(weight) {
+    this.marbleCrates.push(weight);
   }
 }
 

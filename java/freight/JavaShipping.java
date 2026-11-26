@@ -7,16 +7,6 @@ public class JavaShipping {
 
     private final java.util.List<Double> graniteCrates = new java.util.ArrayList<>();
 
-    /** Add a granite crate of the given weight to the manifest. */
-    public void addGraniteCrate(double weight) {
-        graniteCrates.add(weight);
-    }
-
-    /** Weight of one granite crate including its pallet allowance. */
-    private double weighGraniteCrate(double weight) {
-        return weight * 1.1;
-    }
-
     /** Total shipped weight of every granite crate on the manifest. */
     public double totalGraniteWeight() {
         double graniteTally = 0;
@@ -24,6 +14,16 @@ public class JavaShipping {
             graniteTally += weighGraniteCrate(c);
         }
         return graniteTally;
+    }
+
+    /** Weight of one granite crate including its pallet allowance. */
+    private double weighGraniteCrate(double weight) {
+        return weight * 1.1;
+    }
+
+    /** Add a granite crate of the given weight to the manifest. */
+    public void addGraniteCrate(double weight) {
+        graniteCrates.add(weight);
     }
 
     /** One-line summary of a granite freight manifest and its weight. */

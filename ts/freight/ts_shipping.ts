@@ -5,16 +5,6 @@ export class SlateFreightManifest {
   carrierCode: string = "SLAT";
   slateCrates: number[] = [];
 
-  // Add a slate crate of the given weight to the manifest.
-  addSlateCrate(weight: number): void {
-    this.slateCrates.push(weight);
-  }
-
-  // Weight of one slate crate including its pallet allowance.
-  weighSlateCrate(weight: number): number {
-    return weight * 1.1;
-  }
-
   // Total shipped weight of every slate crate on the manifest.
   totalSlateWeight(): number {
     let slateTally = 0;
@@ -22,6 +12,16 @@ export class SlateFreightManifest {
       slateTally += this.weighSlateCrate(c);
     }
     return slateTally;
+  }
+
+  // Weight of one slate crate including its pallet allowance.
+  weighSlateCrate(weight: number): number {
+    return weight * 1.1;
+  }
+
+  // Add a slate crate of the given weight to the manifest.
+  addSlateCrate(weight: number): void {
+    this.slateCrates.push(weight);
   }
 }
 
