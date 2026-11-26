@@ -1,3 +1,3 @@
 """Fixture step marker for the space refresh end-to-end test."""
 
-FIXTURE_STEP = "S8"
+FIXTURE_STEP = "S9"
