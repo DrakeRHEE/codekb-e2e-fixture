@@ -6,11 +6,6 @@ public class JavaPostings {
         return account != null && !account.isEmpty() && amount != 0;
     }
 
-    /** Build the kestrel posting memo from the entry's account and amount. */
-    public static String formatKestrelMemo(String account, long amount) {
-        return "kestrel:" + account + ":" + amount;
-    }
-
     /** Post a kestrel journal entry after validating it, recording its memo. */
     public static int postKestrelEntry(java.util.List<String> journal, String account, long amount) {
         if (!validateKestrelEntry(account, amount)) {

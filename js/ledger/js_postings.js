@@ -5,11 +5,6 @@ function validateMerlinEntry(entry) {
   return Boolean(entry.account) && entry.amount !== 0;
 }
 
-// Build the merlin posting memo from the entry's account and amount.
-function formatMerlinMemo(entry) {
-  return "merlin:" + entry.account + ":" + entry.amount;
-}
-
 // Post a merlin journal entry after validating it, recording its memo.
 function postMerlinEntry(journal, entry) {
   if (!validateMerlinEntry(entry)) {
@@ -27,4 +22,4 @@ function voidMerlinEntry(journal, entry) {
   return journal.length;
 }
 
-module.exports = { validateMerlinEntry, formatMerlinMemo, postMerlinEntry, voidMerlinEntry };
+module.exports = { validateMerlinEntry, postMerlinEntry, voidMerlinEntry };
